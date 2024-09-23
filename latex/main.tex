@@ -362,10 +362,11 @@ Score based on all three recency, frequency, and monetary values.\\
 
 \answer{
     Based on this score, i segmented customers into different categories such as:
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{images/custumer-seg.png}
+    \end{center}
     \begin{itemize}
-        \item \textbf{Champions:} Customers with high recency, frequency, and monetary scores (R = 4-5, F = 4-5, M = 4-5).{
-
-        }
+        \item \textbf{Champions:} Customers with high recency, frequency, and monetary scores (R = 4-5, F = 4-5, M = 4-5).
         \item \textbf{Loyal Customers:}  Customers with high frequency and monetary scores but may have slightly lower recency (R = 3-5, F = 4-5, M = 4-5).
         \item \textbf{Potential Loyalists:} Customers with high recency and frequency but lower monetary value (R = 4-5, F = 3-5, M = 2-3).
         \item \textbf{New Customers:} High recency.
@@ -380,43 +381,205 @@ Score based on all three recency, frequency, and monetary values.\\
     \begin{itemize}
         \item Analyze customer retention rates and identify potential churn risks.
     \end{itemize}
+    \begin{tcolorbox}[colback=blue!5!white, colframe=green!70!black, title= Customer Retention and Churn Rate , fonttitle=\bfseries\Large]
+        \begin{center}
+            \includegraphics[width=1\columnwidth]{images/crc.png}
+        \end{center}
+        Clearly from the pie chart we can see that 73\% of the customers are retained and 23\% are churned.\\
+    \end{tcolorbox}
 
 \section{Sales Trends Analysis}
     \subsection{Time-based Trends}
     \begin{itemize}
         \item Analyze daily, weekly, and monthly sales trends.
     \end{itemize}
-    
-    \subsection{Peak Sales Periods}
-    \begin{itemize}
-        \item Identify peak sales periods and any seasonality trends.
-    \end{itemize}
-    
-    \subsection{Year-over-Year Growth}
-    \begin{itemize}
-        \item Calculate year-over-year growth in sales.
-    \end{itemize}
-    
+   
+        \begin{center}
+        
+        \includegraphics[width=\textwidth]{images/daily.png}
+        \caption{Daily sales trends with 7-days moving average.}
+    \end{center}
+    \begin{center}
+        
+        \includegraphics[width=\textwidth]{images/weekly.png}
+        \caption{Weekly sales trends.}
+    \end{center}
+    \begin{center}
+        
+        \includegraphics[width=\textwidth]{images/monthly.png}
+        \caption{Monthly sales trends.}
+    \end{center}
+    \caption{Time-based sales trends.}
+
+
+\subsection{Peak Sales Periods}
+\textbf{Identify peak sales periods and any seasonality trends.}
+\begin{tcolorbox}[colback=purple!5!white, colframe=purple!75!black, fonttitle=\bfseries, title=Peak Sales Periods by Days]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Order Date} & \textbf{Placed GMV} \\ \hline
+    2023-11-22 & 4,629,566.36 \\ \hline 
+    2022-11-04 & 3,623,119.11 \\ \hline 
+    2022-10-18 & 3,572,387.45 \\ \hline   
+    2022-09-26 & 3,457,606.77 \\ \hline 
+    2022-11-01 & 3,252,048.05 \\ \hline  
+    2023-09-18 & 3,250,288.29 \\ \hline 
+    2023-09-15 & 3,120,405.10 \\ \hline 
+    2023-11-03 & 3,030,412.93 \\ \hline 
+    2023-10-28 & 2,885,263.97 \\ \hline 
+    2023-09-09 & 2,846,904.68 \\ \hline 
+    \end{tabular}
+    \captionof{Top 10 Peak Sales Days}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=green!5!white, colframe=green!75!black, fonttitle=\bfseries, title=Peak Sales Periods by weeks and months]
+
+    \vspace{0.5cm}
+
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Week} & \textbf{Placed GMV} \\ \hline
+    2023-10-30/2023-11-05 & 11,877,473.08 \\ \hline
+    2022-10-31/2022-11-06 & 10,685,698.73 \\ \hline
+    2022-09-26/2022-10-02 & 10,557,566.61 \\ \hline
+    2023-09-04/2023-09-10 & 10,280,051.70 \\ \hline
+    2022-10-17/2022-10-23 & 8,919,020.51 \\ \hline
+    2022-11-14/2022-11-20 & 8,756,086.30 \\ \hline
+    2022-11-07/2022-11-13 & 7,956,940.37 \\ \hline
+    2023-09-18/2023-09-24 & 7,895,670.74 \\ \hline
+    2022-10-03/2022-10-09 & 7,787,362.60 \\ \hline
+    2022-09-12/2022-09-18 & 7,517,063.73 \\ \hline
+    \end{tabular}
+    \captionof{Top 10 Peak Sales Weeks}
+
+    \vspace{0.5cm}
+
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Month} & \textbf{Placed GMV} \\ \hline
+    2022-11 & 31,826,184.02 \\ \hline
+    2023-09 & 31,717,114.58 \\ \hline
+    2023-11 & 31,094,024.46 \\ \hline
+    2022-09 & 28,588,980.49 \\ \hline
+    2022-10 & 27,677,926.44 \\ \hline
+    2023-10 & 22,833,707.32 \\ \hline
+    \end{tabular}
+    \captionof{Top 10 Peak Sales Months}
+
+    \vspace{0.5cm}
+
+\end{tcolorbox}
+
+
+\textbf{From above tables, following observations can be made:}
+
+\begin{itemize}
+    \item The top 10 peak sales days have placed GMV ranging from 2.8M to 4.6M.
+    \item Most of the peak sales days are in the months of September, October, and November.{
+        \begin{center}
+            \includegraphics[width=1\columnwidth]{images/month.png}
+        \end{center}
+    }
+    \item Also we can see find month by month over year sales.{
+        \begin{center}
+            \includegraphics[width=1\columnwidth]{images/month-growth.png}
+        \end{center}
+    }
+\end{itemize}
+
     \subsection{Average Order Value (AOV)}
     \begin{itemize}
-        \item Analyze trends in average order value over time.
+        \item Analyze trends in average order value over time.{
+            \begin{center}
+                \includegraphics[width=1\columnwidth]{images/month-aov.png}
+            \end{center}
+            \textbf{Insights:}
+            \begin{itemize}
+                \item The aov is clearly showing an increase in sales upto october and then a decrease from there.
+                \item It means months aroung October has higher sales and demand than other months beacuse of festivals season.
+            \end{itemize}
+        }
     \end{itemize}
+
 
 \section{SKU Performance Analysis}
     \subsection{Top-Selling SKUs}
-    \begin{itemize}
-        \item Identify the top-selling SKUs based on quantity sold and GMV.
-    \end{itemize}
+    \textbf{First lets see which are SKUs that are top selling.}
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{images/top-skus.png}
+    \end{center}
+    \caption{Top 10 Selling SKUs by Quantity.}
+    \vspace{0.2in}
+    Also lets see the top selling SKUs by GMV.{
+       \begin{verbatim}
+Top 10 SKUs by placed_gmv:
+
+sku_id
+aa61eaa    3358729.54
+bd7c360    3033729.76
+5778589    2004186.77
+0072cca    1818349.65
+8a9517a    1770669.35
+0934276    1691484.70
+5c7951f    1674269.10
+ee90f3e    1285239.63
+be170aa    1270098.64
+6323dad    1269127.86
+Name: placed_gmv, dtype: float64
+       \end{verbatim}
+    }
     
     \subsection{SKU Diversity}
-    \begin{itemize}
-        \item Analyze the diversity of SKUs in customer orders.
-    \end{itemize}
     
+    \texttbf{Analyze the diversity of SKUs in customer orders.}
+    \large
+    What this means is that how many unique SKUS are their in any order_ID.
+    \normalsize
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{images/sku-dis.png}
+    \end{center}
+    \begin{tcolorbox}[colback=lightPink!5!white,colframe=lightPink!75!black,title=Insights]
+        \textbf{Insights:}
+        \begin{itemize}
+            \item Majority of the orders contain 1-14 unique SKUs, meaning customers tend to buy a variety of products in a single order.
+            \item But customers buying more than 14-15 unique SKUs are very less.
+            \item 7 is the most common number of unique SKUs in an order.
+        \end{itemize}
+    \end{tcolorbox}
+  
+    
+
     \subsection{ABC Analysis}
+    \textbf{Perform ABC analysis to categorize SKUs based on sales contribution.}
     \begin{itemize}
-        \item Perform ABC analysis to categorize SKUs based on sales contribution.
+        \item   Category A SKUs (up to 80\% of GMV) are the most critical for driving sales and revenue.
+        \item Category B SKUs contribute moderately (the next 15\% of GMV).
+        \item Category C SKUs (final 5\%) are the least significant for overall revenue.
     \end{itemize}
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{images/abc.png}
+    \end{center}
+One key observations that can be noticed is that \textbf{Only less than 500 unique SKU's are contributing to 80\% of the GMV.}
+\textbf{Extensive results is as follows:}
+\begin{verbatim}
+    ABC Analysis Results:
+    placed_gmv
+    A     484
+    B     605
+    C    1398
+    Name: count, dtype: int64
+    
+    Percentage of SKUs in each category:
+    placed_gmv
+    A    19.453376
+    B    24.316720
+    C    56.189711
+    Name: count, dtype: float64
+\end{verbatim}
+
+
     
     \subsection{Purchase Patterns}
     \begin{itemize}
@@ -456,11 +619,6 @@ Score based on all three recency, frequency, and monetary values.\\
         \item Identify high-performing and underperforming areas.
     \end{itemize}
 
-\section{Time-based Analysis}
-    \subsection{Order Patterns by Day and Time}
-    \begin{itemize}
-        \item Analyze patterns in order timing by day of the week and time of day.
-    \end{itemize}
     
     \subsection{Promotion Opportunities}
     \begin{itemize}
@@ -498,12 +656,6 @@ Score based on all three recency, frequency, and monetary values.\\
     \subsection{Price Optimization Opportunities}
     \begin{itemize}
         \item Identify opportunities for optimizing pricing strategies.
-    \end{itemize}
-
-\section{Visualization and Reporting}
-    \begin{itemize}
-        \item Create informative visualizations to present key insights from the data analysis.
-        \item Prepare a comprehensive report summarizing findings and recommendations.
     \end{itemize}
 
 \section{Advanced Analytics (Optional)}

@@ -7,39 +7,35 @@
 \contentsline {subsection}{\numberline {(a)}Customer Purchase Frequency}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {(b)}Top Customers}{8}{subsection.3.2}%
 \contentsline {subsection}{\numberline {(c)}RFM Analysis}{9}{subsection.3.3}%
-\contentsline {subsection}{\numberline {(d)}Customer Retention and Churn}{14}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Sales Trends Analysis}{14}{section.4}%
-\contentsline {subsection}{\numberline {(a)}Time-based Trends}{14}{subsection.4.1}%
-\contentsline {subsection}{\numberline {(b)}Peak Sales Periods}{14}{subsection.4.2}%
-\contentsline {subsection}{\numberline {(c)}Year-over-Year Growth}{14}{subsection.4.3}%
-\contentsline {subsection}{\numberline {(d)}Average Order Value (AOV)}{15}{subsection.4.4}%
-\contentsline {section}{\numberline {5}SKU Performance Analysis}{15}{section.5}%
-\contentsline {subsection}{\numberline {(a)}Top-Selling SKUs}{15}{subsection.5.1}%
-\contentsline {subsection}{\numberline {(b)}SKU Diversity}{15}{subsection.5.2}%
-\contentsline {subsection}{\numberline {(c)}ABC Analysis}{15}{subsection.5.3}%
-\contentsline {subsection}{\numberline {(d)}Purchase Patterns}{15}{subsection.5.4}%
-\contentsline {section}{\numberline {6}Order Analysis}{15}{section.6}%
-\contentsline {subsection}{\numberline {(a)}Order Sizes}{15}{subsection.6.1}%
-\contentsline {subsection}{\numberline {(b)}Relationship Between Order Size and GMV}{15}{subsection.6.2}%
-\contentsline {subsection}{\numberline {(c)}Multi-item Orders}{16}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Cohort Analysis}{16}{section.7}%
-\contentsline {subsection}{\numberline {(a)}Customer Cohorts}{16}{subsection.7.1}%
-\contentsline {subsection}{\numberline {(b)}Cohort Retention}{16}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Geographic Analysis}{16}{section.8}%
-\contentsline {section}{\numberline {9}Time-based Analysis}{16}{section.9}%
-\contentsline {subsection}{\numberline {(a)}Order Patterns by Day and Time}{16}{subsection.9.1}%
-\contentsline {subsection}{\numberline {(b)}Promotion Opportunities}{16}{subsection.9.2}%
-\contentsline {section}{\numberline {10}Customer Lifetime Value (CLV) Analysis}{17}{section.10}%
-\contentsline {subsection}{\numberline {(a)}CLV Calculation}{17}{subsection.10.1}%
-\contentsline {subsection}{\numberline {(b)}CLV Influencing Factors}{17}{subsection.10.2}%
-\contentsline {section}{\numberline {11}Basket Analysis}{17}{section.11}%
-\contentsline {subsection}{\numberline {(a)}Market Basket Analysis}{17}{subsection.11.1}%
-\contentsline {subsection}{\numberline {(b)}Product Recommendations}{17}{subsection.11.2}%
-\contentsline {section}{\numberline {12}Price Sensitivity Analysis}{17}{section.12}%
-\contentsline {subsection}{\numberline {(a)}Price vs. Demand}{17}{subsection.12.1}%
-\contentsline {subsection}{\numberline {(b)}Price Optimization Opportunities}{17}{subsection.12.2}%
-\contentsline {section}{\numberline {13}Visualization and Reporting}{18}{section.13}%
-\contentsline {section}{\numberline {14}Advanced Analytics (Optional)}{18}{section.14}%
-\contentsline {subsection}{\numberline {(a)}Predictive Modeling}{18}{subsection.14.1}%
-\contentsline {subsection}{\numberline {(b)}Customer Segmentation via Clustering}{18}{subsection.14.2}%
-\contentsline {section}{\numberline {15}Action Plan and Recommendations}{18}{section.15}%
+\contentsline {subsection}{\numberline {(d)}Customer Retention and Churn}{15}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Sales Trends Analysis}{15}{section.4}%
+\contentsline {subsection}{\numberline {(a)}Time-based Trends}{16}{subsection.4.1}%
+\contentsline {subsection}{\numberline {(b)}Peak Sales Periods}{17}{subsection.4.2}%
+\contentsline {subsection}{\numberline {(c)}Average Order Value (AOV)}{19}{subsection.4.3}%
+\contentsline {section}{\numberline {5}SKU Performance Analysis}{20}{section.5}%
+\contentsline {subsection}{\numberline {(a)}Top-Selling SKUs}{20}{subsection.5.1}%
+\contentsline {subsection}{\numberline {(b)}SKU Diversity}{21}{subsection.5.2}%
+\contentsline {subsection}{\numberline {(c)}ABC Analysis}{22}{subsection.5.3}%
+\contentsline {subsection}{\numberline {(d)}Purchase Patterns}{23}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Order Analysis}{23}{section.6}%
+\contentsline {subsection}{\numberline {(a)}Order Sizes}{23}{subsection.6.1}%
+\contentsline {subsection}{\numberline {(b)}Relationship Between Order Size and GMV}{24}{subsection.6.2}%
+\contentsline {subsection}{\numberline {(c)}Multi-item Orders}{24}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Cohort Analysis}{24}{section.7}%
+\contentsline {subsection}{\numberline {(a)}Customer Cohorts}{24}{subsection.7.1}%
+\contentsline {subsection}{\numberline {(b)}Cohort Retention}{24}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Geographic Analysis}{24}{section.8}%
+\contentsline {subsection}{\numberline {(a)}Promotion Opportunities}{24}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Customer Lifetime Value (CLV) Analysis}{24}{section.9}%
+\contentsline {subsection}{\numberline {(a)}CLV Calculation}{24}{subsection.9.1}%
+\contentsline {subsection}{\numberline {(b)}CLV Influencing Factors}{24}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Basket Analysis}{25}{section.10}%
+\contentsline {subsection}{\numberline {(a)}Market Basket Analysis}{25}{subsection.10.1}%
+\contentsline {subsection}{\numberline {(b)}Product Recommendations}{25}{subsection.10.2}%
+\contentsline {section}{\numberline {11}Price Sensitivity Analysis}{25}{section.11}%
+\contentsline {subsection}{\numberline {(a)}Price vs. Demand}{25}{subsection.11.1}%
+\contentsline {subsection}{\numberline {(b)}Price Optimization Opportunities}{25}{subsection.11.2}%
+\contentsline {section}{\numberline {12}Advanced Analytics (Optional)}{25}{section.12}%
+\contentsline {subsection}{\numberline {(a)}Predictive Modeling}{25}{subsection.12.1}%
+\contentsline {subsection}{\numberline {(b)}Customer Segmentation via Clustering}{25}{subsection.12.2}%
+\contentsline {section}{\numberline {13}Action Plan and Recommendations}{25}{section.13}%
