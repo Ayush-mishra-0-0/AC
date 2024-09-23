@@ -5,6 +5,8 @@ import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 from itertools import combinations
 from scipy import stats
+from datetime import datetime, timedelta
+
 
 # # Data Preperation and Overview
 
@@ -147,11 +149,6 @@ print(f"Customer Churn Rate: {churn_rate:.2f}%")
 # We will group the dataset by order_date to analyze daily trends.
 
 df.head()
-
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from datetime import datetime, timedelta
 
 # Assuming the data is already loaded into a DataFrame called 'df'
 # and 'order_date' is converted to datetime
@@ -320,7 +317,7 @@ plt.show()
 # Display the Year-over-Year growth table
 print(yearly_sales)
 
-
+# ----------------------------------------------------------------------------------------------------------------------------------
 # ## 4. Analyze Average Order Value (AOV) Trends
 # We can calculate AOV (Average Order Value) by dividing the total GMV by the number of orders for a given time period.
 
