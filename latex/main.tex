@@ -215,7 +215,7 @@ The analysis will cover the following key areas:
     \item And more...
 \end{itemize}
 
-\section{Data Preparation and Overview}
+\section{1. Data Preparation and Overview}
 \begin{center}
     \color{red}\rule{1\linewidth}{1mm}
 \end{center}
@@ -273,7 +273,7 @@ The analysis will cover the following key areas:
 
 
 
-\section{Customer Behavior Analysis}
+\section{2. Customer Behavior Analysis}
     \subsection{Customer Purchase Frequency}
     Let's look at the distribution of frequency by which customers are placing orders .{
         \begin{center}
@@ -388,7 +388,7 @@ Score based on all three recency, frequency, and monetary values.\\
         Clearly from the pie chart we can see that 73\% of the customers are retained and 23\% are churned.\\
     \end{tcolorbox}
 
-\section{Sales Trends Analysis}
+\section{3. Sales Trends Analysis}
     \subsection{Time-based Trends}
     \begin{itemize}
         \item Analyze daily, weekly, and monthly sales trends.
@@ -504,7 +504,7 @@ Score based on all three recency, frequency, and monetary values.\\
     \end{itemize}
 
 
-\section{SKU Performance Analysis}
+\section{4. SKU Performance Analysis}
     \subsection{Top-Selling SKUs}
     \textbf{First lets see which are SKUs that are top selling.}
     \begin{center}
@@ -582,100 +582,230 @@ One key observations that can be noticed is that \textbf{Only less than 500 uniq
 
     
     \subsection{Purchase Patterns}
-    \begin{itemize}
-        \item Examine SKU purchase patterns and correlations between items.
-    \end{itemize}
+    \textbf{Purchase patterns for top-selling SKUs.}
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{images/month-sku.png}
+    \end{center}
+    \caption{As already seen, the top selling SKUs are sold more in the month of October and November.}
 
-\section{Order Analysis}
+    \subsection{Correlated SKU Pairs:}
+    \textbf{Correlated SKU pairs that are frequently purchased together.}
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{images/corr-sku.png}
+    \end{center}
+    \begin{verbatim}
+ Top 10 Correlated SKU Pairs:
+
+sku_id   sku_id     sku_corr
+320adaf  a6ae1cb    0.991596      
+a6ae1cb  320adaf    0.991596
+320adaf  581e5e8    0.991561
+581e5e8  320adaf    0.991561
+         a6ae1cb    0.987324
+a6ae1cb  581e5e8    0.987324
+a2633d6  af6266b    0.979263
+af6266b  a2633d6    0.979263
+320adaf  ed18f1c    0.962180
+ed18f1c  320adaf    0.962180
+    \end{verbatim}
+
+
+\section{5. Order Analysis}
     \subsection{Order Sizes}
-    \begin{itemize}
-        \item Analyze the number of items per order.
-    \end{itemize}
+    \begin{center}
+       
+            \includegraphics[width=1\columnwidth]{images/order-size.png}
+      
+    \end{center}
+    \textbf{Insights: Majority of the items per order is less than 30 only,\\
+     indicating that most customers tend to buy a small number of items in a single order.}
     
     \subsection{Relationship Between Order Size and GMV}
-    \begin{itemize}
-        \item Examine the relationship between order size and GMV.
-    \end{itemize}
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{images/order-gmv.png}
+    \end{center}
+    \begin{verbatim}
+Average GMV by order size:
+    items_per_order      total_gmv
+0               1.0    3376.119590
+1               2.0    3969.668248
+2               3.0    4018.977017
+3               4.0    4210.006826
+4               5.0    5036.383487
+..              ...            ...
+95            147.0  185110.060000
+96            153.0   25552.700000
+97            157.0  119976.360000
+98            159.0   46079.400000
+99            212.0    3579.440000
+
+    \end{verbatim}
     
     \subsection{Multi-item Orders}
-    \begin{itemize}
-        \item Identify patterns in orders containing multiple items.
-    \end{itemize}
+    \begin{verbatim}
+Comparison of single-item vs multi-item orders:
+                   avg_gmv  order_count
+is_multi_item                          
+False          3376.119590         1340
+True           8546.590083        19799
 
-\section{Cohort Analysis}
+From this we can see that multi-item orders have higher average GMV than single-item orders and also have more order count.
+Seasonal patterns in orders:
+   month   quantity   placed_gmv
+0      9   9.416080  7858.495579
+1     10  10.319842  8699.902473
+2     11   9.747356  8215.198914
+    \end{verbatim}
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{images/value-per.png}
+    \end{center}
+    \textbf{Insights: If a customer is buying more items in a single order,\\
+     then the value per item is low, meaning they are buying cheaper items if buying multiple items.\\
+     But if they are buying single item, then the value of that item is high.}
+
+\section{6. Cohort Analysis}
     \subsection{Customer Cohorts}
     \begin{itemize}
         \item Create cohorts based on the first purchase date of customers.
     \end{itemize}
     
     \subsection{Cohort Retention}
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{images/cohort-retention.png}
+    \end{center}
     \begin{itemize}
-        \item Analyze retention rates and purchasing behavior over time for each cohort.
+        \item \textbf{High Initial Retention:} All cohorts begin with a 100\% retention rate, as expected at the start of the analysis period.
+        
+        \item \textbf{Declining Retention:} Retention rates drop consistently over time for all cohorts, showing typical user drop-off after acquisition.
+        
+        \item \textbf{Best Performance by 2022-09 Cohort:} The 2022-09 cohort maintains relatively high retention rates across longer periods, with 47.47\% after Period 4 and 43.07\% after Period 6.
+        
+        \item \textbf{Improved Retention for Recent Cohorts:} The 2023-09 and 2023-10 cohorts show improved retention compared to earlier cohorts, with the 2023-09 cohort peaking at 63.47\% in Period 2.
+        
+        \item \textbf{Sharp Decline for 2022-10 Cohort:} The 2022-10 cohort experiences a sharp drop from 100\% to 57.03\% after the first period and continues to decline significantly afterward.
+        
+        \item \textbf{Retention Stabilization:} Some cohorts, like the 2022-09, show retention stabilization around 30-40\% over extended periods.
     \end{itemize}
+    
 
-\section{Geographic Analysis}
+\section{7. Geographic Analysis}
     \begin{itemize}
-        \item Analyze sales distribution across different geographic regions.
-        \item Identify high-performing and underperforming areas.
+        \item Which of the Region has highest average sales.{
+             \begin{center}
+                \includegraphics[width=1\columnwidth]{images/region.png}
+             \end{center}
+             \textbf{Insights: From the plot, USA has the highest average sales while India has lowest.}
+        }
+        \item Identify high-performing and underperforming areas.{
+            \begin{verbatim}
+High-performing areas by region:
+warehouse_name
+USA    66248696.45
+
+Underperforming areas:
+warehouse_name
+United Kingdom    54423087.40
+India             53066153.46
+            \end{verbatim}
+   
+        }
     \end{itemize}
 
     
     \subsection{Promotion Opportunities}
-    \begin{itemize}
-        \item Identify potential opportunities for targeted promotions based on time-based analysis.
-    \end{itemize}
+    \textbf{On which days, promotions should be given to increase sales.}
+    \begin{verbatim}
+Days of the week with below-average sales:
+day_of_week
+2              19264706.77
+3              19741434.06
+5              22500186.65
+6              17285881.25
+    \end{verbatim}
 
-\section{Customer Lifetime Value (CLV) Analysis}
+
+
+\section{8. Customer Lifetime Value (CLV) Analysis}
+
     \subsection{CLV Calculation}
     \begin{itemize}
-        \item Calculate customer lifetime value (CLV) for various customer segments.
+        \item CLV is calculated by multiplying the total revenue generated by a customer with their estimated lifespan, assuming yearly CLV.
+        \item Metrics such as total revenue, average order value (AOV), purchase frequency, and customer lifespan are included in the calculation.
     \end{itemize}
     
     \subsection{CLV Influencing Factors}
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{images/clf-factor.png}
+    \end{center}
     \begin{itemize}
-        \item Identify factors that influence CLV.
+        \item \textbf{Total Revenue:} Strong positive correlation with CLV (0.91). Customers generating higher revenue have significantly higher CLV.
+        \item \textbf{Purchase Frequency:} Moderate positive correlation with CLV (0.66). Frequent buyers tend to have higher CLV.
+        \item \textbf{Customer Lifespan:} Weak to moderate positive correlation with CLV (0.48). The longer a customer stays active, the higher their CLV, but this impact is smaller compared to revenue and frequency.
+        \item \textbf{Average Order Value (AOV):} Weak positive correlation with CLV (0.18). AOV has a relatively small impact, indicating that frequent purchases are more important than high-value purchases.
+    \end{itemize}
+    
+    \subsection{Insights on revenue, AOV, and purchase frequency}
+    \begin{itemize}
+        \item \textbf{Total Revenue and Purchase Frequency:} Strong positive correlation (0.70). Customers who purchase more frequently tend to generate higher total revenue.
+        \item \textbf{AOV and Purchase Frequency:} Slight negative correlation (-0.083). Customers making larger purchases tend to buy less frequently, suggesting a trade-off between order size and frequency.
+    \end{itemize}
+    
+    \subsection{Customer Segmentation Based on CLV}
+    \begin{itemize}
+        \item \textbf{High-Value Customers:} Identified as those in the top 25\% of CLV. These customers contribute a significant portion of revenue and tend to have higher purchase frequency.
+        \item \textbf{Low-Value Customers:} Identified as those in the bottom 25\% of CLV. These customers have lower revenue, fewer purchases, and shorter lifespans.
+    \end{itemize}
+    
+    \subsection{CLV Distribution}
+    \begin{itemize}
+        \item The distribution of CLV shows a skewed pattern, with a smaller number of high-value customers contributing a disproportionate amount of revenue, while a larger segment consists of low-value customers.
     \end{itemize}
 
-\section{Basket Analysis}
+\section{9. Basket Analysis}
     \subsection{Market Basket Analysis}
-    \begin{itemize}
-        \item Perform market basket analysis to identify frequently co-purchased items.
-    \end{itemize}
-    
-    \subsection{Product Recommendations}
-    \begin{itemize}
-        \item Generate product recommendations based on customer purchase patterns.
-    \end{itemize}
+    In this section, I will find which pairs are most likely to bought together.
+    \begin{verbatim}
+Most freq. product combinations in multi-item orders:            Count  SKU_ID 
+(aa61eaa, bd7c360)                                               183    12
+(0eeddec, 8705857)                                               159    11
+(d0990b0, f4575a8)                                               143     8
+(941d30b, cb91396)                                               137     8
+(92e3cb7, d0990b0)                                               115     6
+(8ae2033, 92e3cb7)                                               114     6
+(0eeddec, 77ea1be)                                               110     6
+(0934276, 56f9240)                                               104     6
+(380b808, 5ef89e9)                                               103     5
+(0085272, 385c311)                                                98     5
 
-\section{Price Sensitivity Analysis}
+    \end{verbatim}
+
+\section{10. Price Sensitivity Analysis}
     \subsection{Price vs. Demand}
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{images/price-demand.png}
+    \end{center}
     \begin{itemize}
-        \item Analyze the relationship between price changes and demand for different SKUs.
+        \item The demand for SKUs is generally higher at lower prices, as seen by the dense clustering of points on the left side of the plot, where the price per unit is less than 2000.
+        \item The SKU labeled '0934276' (purple) shows a broad distribution of prices, ranging from very low to as high as 8000, with a consistent but low quantity sold across this range.
+        \item The SKU labeled 'aa61eaa' (blue) demonstrates significant demand even at higher prices, peaking around 8000, suggesting a premium product with stable demand.
+        \item There's a notable drop in demand as the price increases beyond 2000 for most SKUs, indicating price sensitivity among customers for these products.
+        \item Most of the data points for all SKUs are concentrated around quantities less than 10, indicating that bulk purchases are less common, regardless of price.
+        \item The SKU '5778589' (red) has instances of high demand (quantities around 15-20) at lower price points, suggesting it is a popular choice when priced competitively.
     \end{itemize}
     
-    \subsection{Price Optimization Opportunities}
-    \begin{itemize}
-        \item Identify opportunities for optimizing pricing strategies.
-    \end{itemize}
 
-\section{Advanced Analytics (Optional)}
-    \subsection{Predictive Modeling}
-    \begin{itemize}
-        \item Develop predictive models for future sales and customer behavior.
-    \end{itemize}
-    
-    \subsection{Customer Segmentation via Clustering}
-    \begin{itemize}
-        \item Perform clustering analysis to identify distinct customer segments.
-    \end{itemize}
+    \newpage
 
-\section{Action Plan and Recommendations}
-    \begin{itemize}
-        \item Based on the insights, develop actionable recommendations to improve business performance.
-    \end{itemize}
+\vfill
 
-\end{document}
+\begin{center}
+    \color{red}\rule{1\linewidth}{1mm}
+    % write thank You
+    \vspace{4in}
 
+    \Huge\textbf{Thank You}
+\end{center}
+\vfill
 
 
 \end{document}

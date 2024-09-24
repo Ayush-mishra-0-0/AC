@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  24 SEP 2024 00:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  24 SEP 2024 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1240,6 +1240,11 @@ LaTeX Font Info:    Font shape `TS1/Roboto-LF/l/n' aliased to
 (Font)              `TS1/Roboto-LF/light/n' on input line 205.
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/light/n' will be
 (Font)              scaled to size 13.0pt on input line 205.
+
+Overfull \hbox (18.3323pt too wide) in paragraph at lines 218--218
+|[]\T1/Roboto-LF/bold/n/32.34409 1. Data Prepa-ra-tion and Overview| 
+ []
+
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 222.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
@@ -2542,23 +2547,29 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 LaTeX Warning: Reference `LastPage' on page 22 undefined on input line 563.
 
 [22 <./images/sku-dis.png>]
+<images/month-sku.png, id=204, 451.6875pt x 339.669pt>
+File: images/month-sku.png Graphic file (type png)
+<use images/month-sku.png>
+Package pdftex.def Info: images/month-sku.png  used on input line 587.
+(pdftex.def)             Requested size: 455.24411pt x 342.36328pt.
 
-c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:598: Undefined control sequence.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:588: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.598     \end{itemize}
-                       
+l.588     \end{center}
+                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:598: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:588: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.598     \end{itemize}
-                       
+l.588     \end{center}
+                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2573,26 +2584,66 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 23 undefined on input line 598.
+LaTeX Warning: Reference `LastPage' on page 23 undefined on input line 588.
 
 [23 <./images/abc.png>]
 
-c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:640: Undefined control sequence.
-\f@nch@olh ...olor {primaryColor}\assignmentClass 
-                                                  \ifdef {\assignmentClassIn...
-l.640     \subsection{Market Basket Analysis}
-                                             
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:589: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.589     \caption
+                  {As already seen, the top selling SKUs are sold more in th...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:589: Undefined control sequence.
+\caption ... \endcsname \fi \fi \@dblarg {\@tempf 
+                                                  \@captype }
+l.589     \caption
+                  {As already seen, the top selling SKUs are sold more in th...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:640: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:589: Undefined control sequence.
+\caption ...e \fi \fi \@dblarg {\@tempf \@captype 
+                                                  }
+l.589     \caption
+                  {As already seen, the top selling SKUs are sold more in th...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<images/corr-sku.png, id=211, 811.5921pt x 715.473pt>
+File: images/corr-sku.png Graphic file (type png)
+<use images/corr-sku.png>
+Package pdftex.def Info: images/corr-sku.png  used on input line 594.
+(pdftex.def)             Requested size: 455.24411pt x 401.33902pt.
+
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:595: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.595     \end{center}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:595: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.640     \subsection{Market Basket Analysis}
-                                             
+l.595     \end{center}
+                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2607,14 +2658,507 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 24 undefined on input line 640.
+LaTeX Warning: Reference `LastPage' on page 24 undefined on input line 595.
 
-[24]
+[24 <./images/month-sku.png>]
 
-c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:677: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:614: Undefined control sequence.
 \f@nch@olh ...olor {primaryColor}\assignmentClass 
                                                   \ifdef {\assignmentClassIn...
-l.677 \end{document}
+l.614     \subsection{Order Sizes}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:614: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.614     \subsection{Order Sizes}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 25 undefined on input line 614.
+
+[25 <./images/corr-sku.png>]
+<images/order-size.png, id=225, 732.8178pt x 393.8715pt>
+File: images/order-size.png Graphic file (type png)
+<use images/order-size.png>
+Package pdftex.def Info: images/order-size.png  used on input line 617.
+(pdftex.def)             Requested size: 455.24411pt x 244.67859pt.
+<images/order-gmv.png, id=226, 745.8264pt x 393.8715pt>
+File: images/order-gmv.png Graphic file (type png)
+<use images/order-gmv.png>
+Package pdftex.def Info: images/order-gmv.png  used on input line 625.
+(pdftex.def)             Requested size: 455.24411pt x 240.41751pt.
+
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:628: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.628 Average GMV by order size:
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:628: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.628 Average GMV by order size:
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 26 undefined on input line 628.
+
+[26 <./images/order-size.png> <./images/order-gmv.png>]
+Overfull \hbox (367.57364pt too wide) in paragraph at lines 652--652
+[]\T1/lmtt/m/n/13 From this we can see that multi-item orders have higher average GMV than single-item orders and also have more order count.[] 
+ []
+
+<images/value-per.png, id=235, 627.3036pt x 393.8715pt>
+File: images/value-per.png Graphic file (type png)
+<use images/value-per.png>
+Package pdftex.def Info: images/value-per.png  used on input line 660.
+(pdftex.def)             Requested size: 455.24411pt x 285.84702pt.
+
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:661: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.661     \end{center}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:661: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.661     \end{center}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 27 undefined on input line 661.
+
+[27]
+<images/cohort-retention.png, id=241, 919.435pt x 701.62125pt>
+File: images/cohort-retention.png Graphic file (type png)
+<use images/cohort-retention.png>
+Package pdftex.def Info: images/cohort-retention.png  used on input line 674.
+(pdftex.def)             Requested size: 455.24411pt x 347.40529pt.
+
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:675: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.675     \end{center}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:675: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.675     \end{center}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 28 undefined on input line 675.
+
+[28 <./images/value-per.png>]
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:694: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.694              \begin{center}
+                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:694: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.694              \begin{center}
+                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 29 undefined on input line 694.
+
+[29 <./images/cohort-retention.png>]
+<images/region.png, id=255, 859.2903pt x 426.393pt>
+File: images/region.png Graphic file (type png)
+<use images/region.png>
+Package pdftex.def Info: images/region.png  used on input line 695.
+(pdftex.def)             Requested size: 455.24411pt x 225.89612pt.
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 695--696
+ [] 
+ []
+
+
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:724: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.724     \end{verbatim}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:724: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.724     \end{verbatim}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 30 undefined on input line 724.
+
+[30 <./images/region.png>]
+Overfull \hbox (20.11115pt too wide) in paragraph at lines 728--728
+|[]\T1/Roboto-LF/bold/n/32.34409 8. Cus-tomer Life-time Value (CLV)
+ []
+
+<images/clf-factor.png, id=263, 653.3208pt x 602.7318pt>
+File: images/clf-factor.png Graphic file (type png)
+<use images/clf-factor.png>
+Package pdftex.def Info: images/clf-factor.png  used on input line 738.
+(pdftex.def)             Requested size: 455.24411pt x 419.99641pt.
+
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:739: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.739     \end{center}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:739: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.739     \end{center}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 31 undefined on input line 739.
+
+[31]
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:750: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.750         \item \textbf
+                           {AOV and Purchase Frequency:} Slight negative cor...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:750: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.750         \item \textbf
+                           {AOV and Purchase Frequency:} Slight negative cor...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 32 undefined on input line 750.
+
+[32 <./images/clf-factor.png>]
+Overfull \hbox (6.79482pt too wide) in paragraph at lines 750--751
+[]\T1/Roboto-LF/bold/n/13 AOV and Pur-chase Fre-quency: \T1/Roboto-LF/light/n/13 Slight neg-a-tive cor-re-la-tion (-0.083). Cus-tomers
+ []
+
+
+Overfull \hbox (7.312pt too wide) in paragraph at lines 761--762
+\T1/Roboto-LF/light/n/13 high-value cus-tomers con-tribut-ing a dis-pro-por-tion-ate amount of rev-enue, while
+ []
+
+
+Overfull \hbox (66.54276pt too wide) in paragraph at lines 768--768
+[]\T1/lmtt/m/n/13 Most freq. product combinations in multi-item orders:            Count  SKU_ID 
+ []
+
+
+Overfull \hbox (39.76929pt too wide) in paragraph at lines 769--769
+[]\T1/lmtt/m/n/13 (aa61eaa, bd7c360)                                               183    12[] 
+ []
+
+
+Overfull \hbox (39.77687pt too wide) in paragraph at lines 770--770
+[]\T1/lmtt/m/n/13 (0eeddec, 8705857)                                               159    11[] 
+ []
+
+
+Overfull \hbox (39.76929pt too wide) in paragraph at lines 771--771
+[]\T1/lmtt/m/n/13 (d0990b0, f4575a8)                                               143     8[] 
+ []
+
+
+Overfull \hbox (39.75412pt too wide) in paragraph at lines 772--772
+[]\T1/lmtt/m/n/13 (941d30b, cb91396)                                               137     8[] 
+ []
+
+
+Overfull \hbox (39.75412pt too wide) in paragraph at lines 773--773
+[]\T1/lmtt/m/n/13 (92e3cb7, d0990b0)                                               115     6[] 
+ []
+
+
+Overfull \hbox (39.76929pt too wide) in paragraph at lines 774--774
+[]\T1/lmtt/m/n/13 (8ae2033, 92e3cb7)                                               114     6[] 
+ []
+
+
+Overfull \hbox (39.77687pt too wide) in paragraph at lines 775--775
+[]\T1/lmtt/m/n/13 (0eeddec, 77ea1be)                                               110     6[] 
+ []
+
+
+Overfull \hbox (39.74654pt too wide) in paragraph at lines 776--776
+[]\T1/lmtt/m/n/13 (0934276, 56f9240)                                               104     6[] 
+ []
+
+
+Overfull \hbox (39.76929pt too wide) in paragraph at lines 777--777
+[]\T1/lmtt/m/n/13 (380b808, 5ef89e9)                                               103     5[] 
+ []
+
+
+Overfull \hbox (39.77687pt too wide) in paragraph at lines 778--778
+[]\T1/lmtt/m/n/13 (0085272, 385c311)                                                98     5[] 
+ []
+
+
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:783: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.783     \subsection{Price vs. Demand}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:783: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.783     \subsection{Price vs. Demand}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 33 undefined on input line 783.
+
+[33]
+<images/price-demand.png, id=286, 720.5319pt x 505.1673pt>
+File: images/price-demand.png Graphic file (type png)
+<use images/price-demand.png>
+Package pdftex.def Info: images/price-demand.png  used on input line 785.
+(pdftex.def)             Requested size: 455.24411pt x 319.18207pt.
+
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:794: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.794     \end{itemize}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:794: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.794     \end{itemize}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 34 undefined on input line 794.
+
+[34 <./images/price-demand.png>]
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:797: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.797     \newpage
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:797: Undefined control sequence.
+\f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
+                                                  \strut 
+l.797     \newpage
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 25.56444pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.56444pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 35 undefined on input line 797.
+
+[35]
+
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:811: Undefined control sequence.
+\f@nch@olh ...olor {primaryColor}\assignmentClass 
+                                                  \ifdef {\assignmentClassIn...
+l.811 \end{document}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2622,10 +3166,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:677: Undefined control sequence.
+c:/Users/Ayush/OneDrive/Desktop/apnaKlub/latex/main.tex:811: Undefined control sequence.
 \f@nch@olh ...ush Kumar Mishra}\ \assignmentTitle 
                                                   \strut 
-l.677 \end{document}
+l.811 \end{document}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2641,9 +3185,9 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-11.56444pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 25 undefined on input line 677.
+LaTeX Warning: Reference `LastPage' on page 36 undefined on input line 811.
 
-[25] 
+[36] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -2671,24 +3215,24 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0EFF285BA03BEF03CEBC4ADD06D93F9A;6817.
+(rerunfilecheck)             After:  56B5956A875546BF854B60935BF72878;6646.
 
-Package lastpage Warning: Rerun to get the references right on input line 677.
+Package lastpage Warning: Rerun to get the references right on input line 811.
 
  ) 
 Here is how much of TeX's memory you used:
- 43152 strings out of 473579
- 1010708 string characters out of 5732263
- 1536125 words of memory out of 5000000
- 65248 multiletter control sequences out of 15000+600000
+ 43224 strings out of 473579
+ 1012509 string characters out of 5732263
+ 1544127 words of memory out of 5000000
+ 65311 multiletter control sequences out of 15000+600000
  644642 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,112p,764b,1123s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb><c:/texlive/2024/texmf-dist/fonts/type1/google/roboto/Roboto-Light.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (25 pages, 854619 bytes).
+Output written on main.pdf (36 pages, 1341693 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 67 named destinations out of 1000 (max. 500000)
- 272 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 355 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
